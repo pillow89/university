@@ -1,0 +1,116 @@
+\title Rechnernetze
+1. Organisation, Motiviation, Literatur und Schichtenmodelle
+-- Christian Schindelhauer
+http://cone.informatik.uni-freiburg.de/lehre/aktuell/rechnernetze-ws22
+
+
+\title Übungsgruppenaufteilung
+\itemize
+	\item nicht durch das Campus-System
+	\item neue Zeiten und Räume
+	\item Sprachwahl (englisch/deutsch)
+	\item Online, Präsenz, Hybrid
+	\item \bold{aber: Eintrag im Campus-System notwendig}
+
+\title Für die Neueinteilung
+	\itemize
+		\item nehmen Sie an der Umfrage auf ILIAS teil
+			\itemize
+				\item https://ilias.uni-freiburg.de/goto.php?target=svy_2868667&client_id=unifreiburg
+		\itemm bis zum 20.10.2022, 16 Uhr
+\title Verteilung auf die Übungsgruppen
+	\itemize
+		\item in der ersten Vorlesungswoche
+\title Einteilung Abgabegruppen
+	\itemize
+		\item dann über ILIAS https://ilias.uni-freiburg.de/goto.php?target=svy_2868667&client_id=unifreiburg
+		\itemm bis zum 20.10.2022, 16 Uhr
+\title Verteilung auf die Übungsgruppen
+	\itemize
+		\item in der ersten Vorlesungswoche
+\title Einteilung Abgabegruppen
+	\itemize
+		\item dann über ILIAS
+
+Erstes Übungsblatt erscheint am Mittwoch 19.10.2022
+- Dann immer mittwochs
+- Abgabe Dienstag 23:59 Uhr in der Folgewoche.
+				
+Gruppenarbeiten werden erwünscht. Und gleich am Anfang auch schon alle Namen und Matrikelnummer hinzuschreiben.
+
+*****
+
+*****
+
+\title Literatur
+
+Das Buch Nr.1 zur Vorlesung:
+- Computer Networking - A Top-Down Approach
+
+Das Buch Nr.2 zur Vorlesung:
+- Computer Networks, Andrew S. Tanenbaum
+
+Auf Englisch sollte besser sein.
+
+Datenbanken:
+	Datenbanken: Grundlagen und XML-Technologien, Georg Lausen. Elsevier Spektrum Akdamischer Verlag, 2005
+
+
+
+
+Types of Computer Networks
+
+PAN
+LAN
+MAN
+WAN
+
+Interprocessor distance   |    Processors located in same      	Example
+	1m		  |    Square meter			Personal area network		PAN
+	10m		  |    Room				Local Area Network		LAN
+	100m		  |    Building				"________________"
+        1km		  |    Campus				"________________"
+	10km		  |    City				Metropolitan area network	MAN
+        100km             |    Country				Wide are network		WAN
+        1000km		  |    Continent			"________________"	
+	10000km		  |    Planet				The internet	
+
+
+Was ist das Internet?
+- Globales System aus verbundenen WANs und LANs
+- Offen, systemunabhängige, ohne zentrale Kontrolle
+
+Telefon wäre an sich auch ein Beispiel.
+
+
+Datenraten
+	- Werden in bit/s angegeben
+	- oder Baud = Symbole/s
+	- kbit/s = 10^3 Bit/s, etc
+
+Speicher wird in Byte = 8 Bit angegeben
+	- Größe meist
+
+\title Protokolle
+
+Menschliches Protokoll
+
+- "Kann ich sie kurz was fragen?"
+- "ja, gerne"
+- "Wie viel Uhr haben wir?"
+- "Viertel fünf!"
+- "So spät! Vielen Dank! Tschüß"
+- "Tschüß"
+
+Spezifizierte Nachrichten
+Spezifizierte Aktionen
+	- aufgrund der Nachrichten
+
+TCP connection (request) ---->
+			 <---- TCP response
+
+Vereinbarung für den Austauch von Informationen in verteilten Netzwerken
+Ein Protokoll definiert:
+	- das \bold{Format} gültiger Nachrichten (Syntax)
+	- Regeln des Datenaustausches (GRammatik)
+

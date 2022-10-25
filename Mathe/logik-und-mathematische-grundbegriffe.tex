@@ -1,0 +1,226 @@
+=1.1 Definition
+
+==Definition 1.1 (Aussage, Wahrheitsgehalt)
+Unter einer *Aussage* versehen wir einen Satz, dem man einen *Wahrheitsgehalt*
+zuweisen kann, das heißt, der entweder *wahr* oder *falsch* ist. Dementsprechened definieren wir den Wahrheitsgehalt als w (wahr) oder f (falsch).
+
+********************
+Wahrheitsgehalt: Sehr wichtig.
+
+********************
+
+
+==Definition 1.2 (Negation)
+Ist _A_ eine Aussage, so bezeichnet \notA (gesprochen: nicht A) Ihre \textbf{Negation}. das heißt, wenn A den Wahrheitsgehalt \italic{w} hat, so hat \negative{A} den Wahrheitsgehalt \italic{f} und umgekehrt.
+
+***********
+Eigentlich nur negation.
+***********
+
+
+==Definition 1.3 (Konjunktion, Disjunktion, Junktoren)
+1. Sind A und B Aussagen, so bezeichnen wir als \textbf{Konjunktion} von A und B die Aussage A \and B (gesprochen: A und B). A \and B ist genau dann wahr, wenn A und B wahr sind.
+2. Sind A und B Aussagen, so bezeichnen wir als \textbf{Disjunktion} von A und B die Aussage A \or B (gesprochen: A oder B). A \or B ist wahr, wenn A, B oder beide Aussagen A und B wahr sind.
+
+
+*************
+Konjunktion => Fast wie connection. Zusammen. Zusammen funktioniert etwas
+Disjunktion => Dis. Fast wie Dif, fast wie unterschiedlich. Aber kann trotzdem wahr sein.
+*************
+
+==Definition 1.4 (Quantoren)
+\itemize
+	\item Man schreibt \exist für "Es gibt (mindestens) ein". Dieser Quantor heißt \bold{Existenzquantor}
+	\item Man schreibt \exist! für "Es gibt genau ein".
+	\item Man schreibt \forAll "Für alle". Dieser Quantor heißt \bold{Allquantor}
+*****
+
+*****
+==Definition 1.5 (Implikation, Äquivalenz)
+Sind A und B Aussagen, so schreiben wir A => B für "aus A folgt B" und nennen dies \bold{Implikation}. A => B ist dabei nur dann falsch, wenn A wahr und B falsch ist. Gilt A => B und B => A, so schreiben wir auch A <=> B und nennen dies \bold{Äquivalenz}
+
+==Definition 1.6(weitere Notation)
+\itemize
+	\item Wir schreiben x := y für "x ist per Definition gleich y"
+	\item Wir schreiben ":" für "so, dass gilt".
+	\item Wir schreiben "o.B.d.A." für "ohne Beschränkung der Allgemeinheit" beziehungsweise "OE" für "ohne Einschränkung"
+	\item Wir schreiben a|b für a teilt b.
+
+=Erklärungen zu den Definitionen.
+== 1.1 Aussage und dem Wahrheitsgehalt.
+
+Der einzige Satz dem man ein Wahrheitsgehalt zuordnen kann.
+Aussage: "Es regnet" => Eindeutig zu sagen. Es ist wahr oder falsch.
+Keine Aussage "Regnet es?" (ist ja auch eine Frage)
+aber auch "Spinat schmeckt nicht" (ist subjektiv).
+"Stefan ist schlau" Ist auch keine Aussage.
+
+== 1.2 der Negation
+Ist das Gegenteil. A Aussage ist "Es regnet" \not A ist "Es regnet nicht"
+
+
+
+\bold{mxn-Matrix} mit der Einträge a\lower{i,j}.
+maxn-Matrix heißen \bold{quadratisch} 
+Eine mx1-Matrix 
+(v1)
+(..)
+(
+\bold{mxn-Matrix} mit der Einträge a\lower{i,j}.
+maxn-Matrix heißen \bold{quadratisch} 
+Eine mx1-Matrix 
+(v1)
+(..)
+(..)
+(..)
+(vm)
+heißt auch \bold{Spaltenvektor} der Länge m
+
+Eine 1xn-Matrix 
+w = (v1 v2 .... vn) = (w1, w2, ..., wn)
+heißt auch \bold{Zahlenvektor der Länge n}
+
+Mit Matrixen kann man rechnen
+
+Def.1.9
+Für m,n \element \natürliche Zahlen seien A (aij)
+und B = (bij) mxn-Matrixen
+
+Dann heißt A+B = (aij + bij) \bold{Summe} von A und B
+Sei \alpha eine Zahl. Dann heißt \alphaA = (\alpha aij)
+\bold{skalares Vielfach} von A
+
+Die \bold{Nullmatrix} ist die nxm-Matrix, in der alle Einträge gleich 0
+sind. Die \bold{Einheitsmatrix} ist die nxn-Matrix
+
+E\lower{n} = (\deltaij) wobei \deltaij = { 1     i=j
+										   0}
+										
+somit = (0011)
+
+\bold{Bemerkung} Buchstaben x,a können für Zahlen, Vektoren, Matrizen usw. stehen
+
+Oft (v1... vn) statt (v1)
+					 (..)
+					 (..)
+					 (vn)
+					
+Das Symbol 0 (Null) kann für Zahlen, Vektoren, Matrizen stehen.
+
+\title Def. 1.10
+
+Seien m,n,p \element \natürlicher-Zahlen
+
+A = (aij)m,p eine mxp-Matrix
+B = (bjk)p,n eine pxn-Matrix ====> p ist da vorhanden, dann kann man mit rechnen, ansonsten nicht.
+
+Dann ist AB=(Cik)m,n die mxn-Matrix  (m ist von A und n ist von B)
+Mit den Einträgen Cik=\Summe aijbjk  (Spalte * Zeile)
+                     =aijbjk + ai2b2k+...+aipbpk
+\textbf{Merke} Zeile x Spalte
+ 
+Bsp(i) 	( 1 2 )(5 1)
+		( 0 4 )(1 2)
+		
+		(1*5 + 2*1 1*1 + 2*2)   = (7 5)
+		(0*5 + 4*1 0*1 + 4*2)   = (4 8)
+		
+Bsp(ii)	(1, 0, 1, 9) *  (2)
+						(1/2)  = 1*2 + 0*1/2 + 1*1 + 9*4 = 39
+						(1)
+						(4)
+						
+						
+Also theoretisch hätte ich beide einfach untereinander schreiben können und dann jeweils * und danach + rechnen.
+
+Bsp(iii)	(2)
+			(1/2) * (1, 0, 1, 9)  
+			(1)
+			(4)
+			
+Hier der Unterschied
+			(2		0	2	18)
+			(1/2	0	1/2	9/2)
+			(1		0	1	9)
+			(4		0	4	36)
+			
+Ist nicht kommutativ, man darf nicht einfach wechseln.
+
+Das lineare Gleichungssystem aus Def.1.8
+(Dieses lange Teil)
+
+schreiben wir jetzt als 
+Ax=b wobei
+
+A = (aij)^m,n \lower{i=1, j=1}
+und der Lösungsvektor x =(x1)
+						 (..)
+						 (..)
+						 (xn)
+						
+Achtung im Skript ist es falsch.
+
+(A|b)= (a11 ... a1n b1)
+	   (a21 ... a2n b2)
+	   (a31 ... a3n b3)
+	   (am1 ... amn bm)
+
+heißt \textbf{erweiterte Koeffizientenmatrix} des Gleichungssystem
+
+\textbf{Bemerkung} In Satz 1.2 ging es um die Matrix A = (a b)
+ 														 (c d)
+														
+und die Gleichung 
+
+	A = (x) = (e)
+		(y)   (f)
+		
+Die erweiterte Koeffizientenmatrix ist (a b e)
+									   (c d f)
+									
+
+Die Zahl \delta = ad - bc heißt \textbf{Determinante} det(A) von A.
+Auch die Lösungsformel schreibt sich am einfachsten mit Matrizen. Ist det(A) != 0, so gilt
+
+**** Am besten im Skript schauen, das ist echt eine große Formel **** Seite 15
+
+Man kann aber aus Matrizen sogar Ausklammern und Ausmultiplizieren.
+In dieser großen Formel steht zum Beispiel im Bruch det(A)
+
+Satz. 1.11 (Rechenregeln) Seien
+A,B,C,D,E,F,G Matrizen, so dass die jeweiligen Operationen definiert sind.
+Seien \alpha und \beta
+
+(i) (Assoziativität der Addition)
+A + (B + C) = (A+B) + C
+(ii) (Kommutativität der Addition)
+A + B = B + A
+(iii) (Assoziativität der Multiplikation)
+	A(BC)=(AB)C
+(iv) (neutrales Element der Multiplikation)
+	EmA = A = A*En
+	
+(v) (Distributivgesetze der Matrix multipliziert) | Punkt vor Strich
+	A(B+C) = A*B + A*C
+	(D+E)F = DF + EF
+(vi) (Assoziativitätsgesetz der skalaren Multiplikation)
+	(\alpha\beta)A = \alpha(\beta A)
+	\alpha(AB) = (\alpha A)B = A(\alpha B)
+(vii) (Distributivitätsgesetz der skalaren Multiplikation)
+	(\alpha + \beta)A = \alpha A + \beta A
+	\alpha(A+B) = \alpha A + \alpha B
+	
+\textbf{Bemerkung} Matrixmultiplikation ist \textbf{nicht} kommutativ
+\textbf{Beweis} Hinschreiben, mit den Rechenregeln für die Zahlen.
+
+z.B: (vi) \textbf{Behauptung} \alpha(AB) = (\alpha A)B = A(\alpha B)
+
+A = (aij) B = (bjk) \alpha Zahl
+
+\alpha(AB)=\alpha( j=1\Summe-p aijbjk)
+          =(\alpha j=1\Summe-p aijbjk)
+		  =(\alpha A)B = (\alpha*aij) (bjk)
+		  =(j=1 \Summe-p (\alpha aij)bjk)
+		  Es gilt Gleichheit, dem für jedes j, und k gilt
+		
+		\alpha j=1\Summe-p aijbjk= j=1\SUmme-p (\alphaaij)bjk
